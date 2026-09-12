@@ -1,0 +1,68 @@
+{
+    "name": "@point-of-sale/star-graphics-printer-encoder",
+    "version": "1.0.0",
+    "description": "Encode images to the Star Graphic raster mode commands of the Star TSP100 printer family",
+    "type": "module",
+    "exports": {
+        "types": "./dist/star-graphics-printer-encoder.d.ts",
+        "browser": {
+            "import": "./dist/star-graphics-printer-encoder.esm.js",
+            "require": "./dist/star-graphics-printer-encoder.umd.js",
+            "script": "./dist/star-graphics-printer-encoder.umd.js"
+        },
+        "import": "./dist/star-graphics-printer-encoder.mjs",
+        "require": "./dist/star-graphics-printer-encoder.cjs"
+    },
+    "main": "dist/star-graphics-printer-encoder.cjs",
+    "module": "dist/star-graphics-printer-encoder.mjs",
+    "types": "dist/star-graphics-printer-encoder.d.ts",
+    "scripts": {
+        "build": "tsc && rollup -c && rm -rf dist/tmp",
+        "lint": "eslint --fix src/*.js test/*.js",
+        "mocha": "mocha test/",
+        "test": "npm run lint && npm run mocha"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/NielsLeenheer/StarGraphicsPrinterEncoder.git"
+    },
+    "keywords": [
+        "pos",
+        "point-of-sale",
+        "receipt",
+        "printer",
+        "encoder",
+        "star",
+        "starmicronics",
+        "star-graphics",
+        "raster",
+        "tsp100",
+        "thermal-printer",
+        "graphics",
+        "bitmap",
+        "image"
+    ],
+    "author": "Niels Leenheer",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/NielsLeenheer/StarGraphicsPrinterEncoder/issues"
+    },
+    "homepage": "https://github.com/NielsLeenheer/StarGraphicsPrinterEncoder#readme",
+    "devDependencies": {
+        "@rollup/plugin-commonjs": "^24.1.0",
+        "@rollup/plugin-node-resolve": "^15.0.2",
+        "@rollup/plugin-terser": "^0.4.1",
+        "chai": "^4.3.7",
+        "eslint": "^8.39.0",
+        "eslint-config-google": "^0.14.0",
+        "mocha": "^10.2.0",
+        "rollup": "^3.20.7",
+        "rollup-plugin-dts": "^6.3.0",
+        "typescript": "^5.9.3"
+    },
+    "files": [
+        "dist",
+        "README.md",
+        "LICENSE"
+    ]
+}
