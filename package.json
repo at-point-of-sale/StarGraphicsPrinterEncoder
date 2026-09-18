@@ -24,7 +24,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/NielsLeenheer/StarGraphicsPrinterEncoder.git"
+        "url": "git+https://github.com/at-point-of-sale/StarGraphicsPrinterEncoder.git"
     },
     "keywords": [
         "pos",
@@ -45,9 +45,9 @@
     "author": "Niels Leenheer",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/NielsLeenheer/StarGraphicsPrinterEncoder/issues"
+        "url": "https://github.com/at-point-of-sale/StarGraphicsPrinterEncoder/issues"
     },
-    "homepage": "https://github.com/NielsLeenheer/StarGraphicsPrinterEncoder#readme",
+    "homepage": "https://github.com/at-point-of-sale/StarGraphicsPrinterEncoder#readme",
     "devDependencies": {
         "@rollup/plugin-commonjs": "^24.1.0",
         "@rollup/plugin-node-resolve": "^15.0.2",

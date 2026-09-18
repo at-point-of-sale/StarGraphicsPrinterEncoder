@@ -15,9 +15,9 @@ Encode images to the Star Graphic raster mode commands of the Star TSP100 printe
 
 The Star TSP100, TSP100ECO, TSP100GT, TSP100II and TSP100III have no fonts and no barcode engine. Star's SDKs call what they do have Star Graphic mode: the printer accepts raster rows, a handful of mode settings, a cut and a drawer pulse, and nothing else. On Windows the futurePRNT driver renders receipts to raster images before sending them; without it, on macOS, ChromeOS and Linux, raster mode is all there is.
 
-This library turns 1-bit images into those commands, and nothing else: where [ReceiptPrinterEncoder](https://github.com/NielsLeenheer/ReceiptPrinterEncoder) encodes receipts for generic thermal printers, this encodes for one specific printer.
+This library turns 1-bit images into those commands, and nothing else: where [ReceiptPrinterEncoder](https://github.com/at-point-of-sale/ReceiptPrinterEncoder) encodes receipts for generic thermal printers, this encodes for one specific printer.
 
-It is normally not used directly. A printer driver such as [WebUSBReceiptPrinter](https://github.com/NielsLeenheer/WebUSBReceiptPrinter) or [NetworkReceiptPrinter](https://github.com/NielsLeenheer/NetworkReceiptPrinter) renders a receipt to images with [ReceiptPrinterRenderer](https://github.com/NielsLeenheer/ReceiptPrinterRenderer) and hands the items to this encoder, which is why `encode()` takes exactly the item stream the renderer produces.
+It is normally not used directly. A printer driver such as [WebUSBReceiptPrinter](https://github.com/at-point-of-sale/WebUSBReceiptPrinter) or [NetworkReceiptPrinter](https://github.com/at-point-of-sale/NetworkReceiptPrinter) renders a receipt to images with [ReceiptPrinterRenderer](https://github.com/at-point-of-sale/ReceiptPrinterRenderer) and hands the items to this encoder, which is why `encode()` takes exactly the item stream the renderer produces.
 
 The TSP100IV is not part of this family, it speaks StarPRNT natively and needs no raster mode.
 
